@@ -31,12 +31,12 @@ export default {
   },
   head() {
     return {
-      title: `KOGA cykel`,
+      title: `KOGA ${this.bike.model}`,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Her er alle vores cykler jaaa',
+          content: this.bike.meta_description,
         },
       ],
     }
